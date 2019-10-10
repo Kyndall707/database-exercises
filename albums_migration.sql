@@ -6,7 +6,7 @@ create table albums
     artist       VARCHAR(55),
     name         VARCHAR(50),
     release_date DATE,
-    sales        FLOAT(10, 2),
+    sales        FLOAT(5, 2),
     genre        VARCHAR(20),
     primary key (id)
 );

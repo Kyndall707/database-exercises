@@ -1,0 +1,30 @@
+
+
+CREATE DATABASE database_name;
+
+//nothing is case sensitive in mysql
+
+USE database_name; //use is basically the same as saying open
+
+CREATE USER 'username'@'hostname' IDENTIFIED BY 'password';
+GRANT permissions ON database_name.table_name TO 'username'@'hostname' [WITH GRANT OPTION(is optional)];
+
+CREATE TABLE table_name [IF NOT EXISTS(is optional)](
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    feild_name_2 TYPE,
+    ...
+    PRIMARY KEY(id)
+);
+
+SHOW TABLES; //list out the tables on the database
+
+DESCRIBE table_name; //shows more details about the table
+
+SHOW CREATE TABLE table_name; //shows the format of the table
+
+DROP USER 'username'@'hostname';
+
+DROP TABLE table_name [IF EXISTS(is optional)];
+
+DROP DATABASE database_name;
+
