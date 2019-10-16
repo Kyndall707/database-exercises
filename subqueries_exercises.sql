@@ -16,3 +16,17 @@ WHERE emp_no IN(
     WHERE first_name = 'Aamod'
     );
 
+SELECT first_name, last_name
+FROM employees
+WHERE emp_no IN (
+    SELECT emp_no
+    FROM dept_manager
+    WHERE to_date = '9999%'
+)
+  AND gender = 'F';
+
+# BONUS 1
+
+
+
+# BONUS 2
